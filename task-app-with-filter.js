@@ -115,7 +115,7 @@ textInput.addEventListener("input", () => {
 });
 
 nextButton.addEventListener("click", () => {
-  let r = pagination.increasePageNumber();
+  let increase = pagination.increasePageNumber();
   let paginatedData = paginate(
     taskDetails.taskList,
     PER_PAGE,
@@ -125,7 +125,7 @@ nextButton.addEventListener("click", () => {
 });
 
 prevButton.addEventListener("click", () => {
-  let r = pagination.decreasePageNumber();
+  let decrease = pagination.decreasePageNumber();
 
   let paginatedData = paginate(
     taskDetails.taskList,
